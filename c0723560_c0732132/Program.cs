@@ -15,14 +15,14 @@ namespace c0723560_c0732132
         public class BankAccount
         {
             private string m_customerName;
-
             private double m_balance;
-
             private bool m_frozen = false;
 
             private BankAccount()
             {
             }
+
+
             public BankAccount(string customerName, double balance)
             {
                 m_customerName = customerName;
@@ -85,6 +85,7 @@ namespace c0723560_c0732132
             ba.Credit(5.77);
             ba.Debit(11.22);
             Console.WriteLine("Current balance is ${0}", ba.Balance);
+            Console.ReadKey();
         }
     }
     }
